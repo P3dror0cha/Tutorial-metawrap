@@ -3,6 +3,7 @@
 Resultados do tutorial:
 
 ###READ_QC MODULE###
+
 Neste módulo as reads brutas tiveram os adaptadores do método de sequenciamento pelo TrmGalore, e a contaminação humana foi removida com o bmtagger. O report de qualidade das reads (feito pelo FastQC) segue abaixo:
 
 
