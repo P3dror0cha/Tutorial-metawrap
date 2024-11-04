@@ -1,6 +1,10 @@
 # Tutorial-metawrap
-
+´´´
 Resultados do tutorial:
+
+###READ_QC MODULE###
+Neste módulo as reads brutas tiveram os adaptadores do método de sequenciamento pelo TrmGalore, e a contaminação humana foi removida com o bmtagger. O report de qualidade das reads (feito pelo FastQC) segue abaixo:
+´´´
 
 ERR011347:
 
@@ -9,19 +13,14 @@ ERR011347:
       Foward:
       
       file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011347/pre-QC_report-47/ERR011347_1_fastqc.html
-      
       Reverse:
-      
       file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011347/pre-QC_report-47/ERR011347_2_fastqc.html
 
     POST-REPORT:
 
         Foward:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011347/post-QC_report-47/final_pure_reads_1_fastqc.html
-
         Reverse:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011347/post-QC_report-47/final_pure_reads_2_fastqc.html
         
 ERR011348:
@@ -29,21 +28,15 @@ ERR011348:
      PRE-REPORT:
     
         Foward:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011348/pre-QC_report-48/ERR011348_1_fastqc.html
-
         Reverse:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011348/pre-QC_report-48/ERR011348_2_fastqc.html
 
     POST-REPORT:
 
         Foward:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011348/post-QC_report-48/final_pure_reads_1_fastqc.html
-
         Reverse:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011348/post-QC_report-48/final_pure_reads_2_fastqc.html
 
 ERR011349:
@@ -51,19 +44,22 @@ ERR011349:
     PRE-REPORT:
 
         Foward:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011349/pre-QC_report-49/ERR011349_1_fastqc.html
-
         Reverse:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011349/pre-QC_report-49/ERR011349_2_fastqc.html
 
     POST-REPORT:
 
         Foward:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011349/post-QC_report-49/final_pure_reads_1_fastqc.html
-
         Reverse:
-
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011349/post-QC_report-49/final_pure_reads_2_fastqc.html
+
+###ASSEMBLY_MODULE###
+Assembly report:
+    file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/ASSEMBLY/assembly_report.html
+
+###INITIAL_BINNING_MODULE###
+
+Durante o binning inicial utilizamos as ferramentas concoct, maxbin2 e metabat2. Os resultados que cada uma retornaram foram:
+
