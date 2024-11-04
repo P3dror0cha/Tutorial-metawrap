@@ -57,7 +57,8 @@ ERR011349:
         file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/READ_QC/ERR011349/post-QC_report-49/final_pure_reads_2_fastqc.html
 
 ###ASSEMBLY_MODULE###
-Assembly report:
+
+O assembly das reads em contigs foi feito com o programa MegaHit. O report do módulo está no link:
     file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/ASSEMBLY/assembly_report.html
 
 ###INITIAL_BINNING_MODULE###
