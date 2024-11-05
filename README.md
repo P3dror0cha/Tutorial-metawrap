@@ -125,3 +125,5 @@ Os dados brutos do heatmap são:
 | bin.3       | 614.541562     | 0.055526       | 0.284666       |
 
 **REASSEMBLED_BINS_MODULE**
+
+Este módulo procura remontar os bins (módulo BIN_REFINEMENT) qualidade dos bins gerados. Por meio da utiliza
