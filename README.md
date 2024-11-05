@@ -79,7 +79,18 @@ Durante o binning inicial utilizamos as ferramentas concoct, maxbin2 e metabat2.
 | bin.10 | 55.12        | 2.588         | 0.422 | Selenomonadales| 1763  | 1055903 | binsC  |
 | bin.1  | 53.60        | 6.165         | 0.304 | Bacteria       | 1961  | 934099  | binsBC |
 
-Abaixo temos um gráfico que demonstra comparativamente a qualidade das bins individuais produzidas pelas trÊs ferramentas (concoct, maxbin2 e metabat2) e pelo metawrap:
+Abaixo temos um gráfico que demonstra comparativamente a qualidade das bins individuais produzidas pelas três ferramentas (concoct, maxbin2 e metabat2) e pelo metawrap:
 
 ![binning_results](https://github.com/user-attachments/assets/035d2932-acbe-4069-9888-424b01f01d2e)
+
+**BLOBOLOGY_MODULE**
+
+Neste módulo o metawrap utiliza a ferramenta MEGABLAST para fazer a identificação taxonômica dos contigs de cada amostra. Em paralelo o módulo também usa o bowtie2, que é um programa de alinhamento gênico, que utiliza as reads limpas obtidas no módulo READ_QC. Com ambos os programas e com a base de dados do NCBI, o Metawrap gerou os seguintes resultados:
+
+![final_assembly blobplot taxlevel_superkingdom](https://github.com/user-attachments/assets/ee6a1841-3e3d-473a-98dd-df155a524763)
+
+![final_assembly blobplot taxlevel_phylum](https://github.com/user-attachments/assets/678cda5f-3409-4586-869d-25920e64bdea)
+
+![final_assembly blobplot taxlevel_order](https://github.com/user-attachments/assets/5d2ada48-a722-4793-8d63-eda65f7cd96a)
+
 
