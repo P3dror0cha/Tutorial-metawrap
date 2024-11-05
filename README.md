@@ -151,4 +151,20 @@ O gráfico final feito pelo CheckM segue abaixo:
 
 ![reassembled_bins](https://github.com/user-attachments/assets/b27f53af-42c5-4a91-bfd9-a1b199a1b28d)
 
+**CLASSIFY_BINS_MODULE**
+
+Este módulo usa o taxator-tk para definir a taxonomia de cada contig, gerando um resultado confiável para os bins. Os resultados deste módulo foram:
+
+| Filename                | Taxonomy                                                                                       |
+|:----------------------:|:----------------------------------------------------------------------------------------------:|
+| bin.2.strict.fa        | Bacteria;Bacillota;Clostridia                                                                 |
+| bin.3.permissive.fa    | Bacteria;Bacillota;Clostridia;Lachnospirales;Lachnospiraceae                                 |
+| bin.10.permissive.fa   | Bacteria;Bacillota;Negativicutes;Acidaminococcales;Acidaminococcaceae;Phascolarctobacterium;Phascolarctobacterium faecium |
+| bin.9.orig.fa          | Bacteria                                                                                       |
+| bin.7.strict.fa        | Bacteria                                                                                       |
+| bin.6.strict.fa        | Bacteria;Bacteroidota;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides                 |
+| bin.5.strict.fa        | Bacteria                                                                                       |
+| bin.8.permissive.fa    | Bacteria;Bacillota                                                                            |
+| bin.4.orig.fa          | Archaea;Euryarchaeota;Methanobacteria;Methanobacteriales;Methanobacteriaceae;Methanobrevibacter;Methanobrevibacter smithii |
+| bin.1.permissive.fa    | Bacteria;Bacillota                                                                            |
 
