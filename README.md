@@ -126,4 +126,29 @@ Os dados brutos do heatmap são:
 
 **REASSEMBLED_BINS_MODULE**
 
-Este módulo procura remontar os bins (módulo BIN_REFINEMENT) qualidade dos bins gerados. Por meio da utiliza
+Este módulo procura remontar os bins gerados no módulo BIN_REFINEMENT, remontando bins melhores por meio do SPAdes. Inicialmente este módulo separa os bins em grupos distintos de acordo com o número de incompatibilidades presentes nas leituras. A ferramenta SPAdes cria novos bins que são avaliados quanto a completude e contaminação pelo CheckM. 
+
+Os valores brutos são:
+
+| bin                  | completeness | contamination | GC    | lineage        | N50   | size    |
+|:--------------------:|:------------:|:-------------:|:-----:|:--------------:|:-----:|:-------:|
+| bin.1.permissive     | 51.90        | 2.823         | 0.304 | Bacteria       | 2349  | 956985  |
+| bin.10.permissive    | 56.69        | 0.718         | 0.422 | Selenomonadales| 2355  | 1103724 |
+| bin.2.strict         | 74.07        | 0.335         | 0.284 | Clostridiales  | 26474 | 1262290 |
+| bin.3.permissive     | 87.41        | 0.0           | 0.370 | Clostridiales  | 8165  | 2048704 |
+| bin.4.orig           | 94.53        | 1.150         | 0.313 | Euryarchaeota  | 4882  | 1490350 |
+| bin.5.strict         | 67.82        | 1.342         | 0.444 | Clostridiales  | 2651  | 1191457 |
+| bin.6.strict         | 80.94        | 1.595         | 0.471 | Bacteroidales  | 9825  | 3235994 |
+| bin.7.strict         | 61.17        | 1.403         | 0.513 | Clostridiales  | 2645  | 1268363 |
+| bin.8.permissive     | 56.88        | 8.238         | 0.266 | Clostridiales  | 2430  | 1720765 |
+| bin.9.orig           | 98.92        | 0.866         | 0.404 | Clostridiales  | 13250 | 2199852 |
+
+A comparação entre os bins do módulo BIN_REFINEMENT e os remontados está representada nos gráficos de qualidade, contaminação e N50:
+
+![reassembly_results](https://github.com/user-attachments/assets/f248e07b-648b-4fe7-8fd7-1ade7769b1a4)
+
+O gráfico final feito pelo CheckM segue abaixo:
+
+![reassembled_bins](https://github.com/user-attachments/assets/b27f53af-42c5-4a91-bfd9-a1b199a1b28d)
+
+
