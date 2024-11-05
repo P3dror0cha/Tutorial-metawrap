@@ -78,3 +78,5 @@ bin.8   55.27   8.821   0.266   Clostridiales   1938    1685647 binsBC
 bin.10  55.12   2.588   0.422   Selenomonadales 1763    1055903 binsC
 bin.1   53.60   6.165   0.304   Bacteria        1961    934099  binsBC
 
+![binning_results](https://github.com/user-attachments/assets/035d2932-acbe-4069-9888-424b01f01d2e)
+
