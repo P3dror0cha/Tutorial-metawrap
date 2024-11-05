@@ -93,7 +93,9 @@ Neste módulo o metawrap utiliza a ferramenta MEGABLAST para fazer a identifica�
 
 ![final_assembly blobplot taxlevel_order](https://github.com/user-attachments/assets/5d2ada48-a722-4793-8d63-eda65f7cd96a)
 
+
 Utilizando os bins refinados obtidos no módulo BIN_REFINEMENT, os resultados foram:
+
 
 ![final_assembly blobplot binned_yes_no](https://github.com/user-attachments/assets/6d69cf78-7136-4847-934c-b07e042b9547)
 
@@ -101,3 +103,25 @@ Utilizando os bins refinados obtidos no módulo BIN_REFINEMENT, os resultados fo
 
 ![final_assembly blobplot bin](https://github.com/user-attachments/assets/7c63f483-3395-4701-89fc-51102c9c1550)
 
+**QUANT_BINS_MODULE**
+
+Este módulo utiliza a ferramenta Salmon para criar um heatmap indicando a abundância dos bins em cada amostra. Esta é uma análise importante porque indica quais bins estão mais ou menos frequentes.
+
+![bin_abundance_heatmap](https://github.com/user-attachments/assets/033ac222-716d-4135-a11a-2845db5cd7f8)
+
+Os dados brutos do heatmap são:
+
+| Genomic bins | ERR011349     | ERR011348     | ERR011347     |
+|:------------:|:--------------:|:--------------:|:-------------:|
+| bin.9       | 0.091679       | 98.577935      | 108.50986      |
+| bin.10      | 0.0            | 42.01186       | 40.352775      |
+| bin.1       | 6.34819        | 17.996391      | 35.168827      |
+| bin.4       | 2.716425       | 23.549049      | 43.3558        |
+| bin.2       | 417.129769     | 0.055903       | 0.116925       |
+| bin.5       | 124.577122     | 41.4627735     | 22.49089       |
+| bin.6       | 54.713377      | 72.460078      | 78.118091      |
+| bin.7       | 0.0            | 66.828652      | 76.064576      |
+| bin.8       | 0.67023        | 12.080309      | 38.160772      |
+| bin.3       | 614.541562     | 0.055526       | 0.284666       |
+
+**REASSEMBLED_BINS_MODULE**
