@@ -79,5 +79,7 @@ Durante o binning inicial utilizamos as ferramentas concoct, maxbin2 e metabat2.
 | bin.10 | 55.12        | 2.588         | 0.422 | Selenomonadales| 1763  | 1055903 | binsC  |
 | bin.1  | 53.60        | 6.165         | 0.304 | Bacteria       | 1961  | 934099  | binsBC |
 
+Abaixo temos um gráfico que demonstra comparativamente a qualidade das bins individuais produzidas pelas trÊs ferramentas (concoct, maxbin2 e metabat2) e pelo metawrap:
+
 ![binning_results](https://github.com/user-attachments/assets/035d2932-acbe-4069-9888-424b01f01d2e)
 
