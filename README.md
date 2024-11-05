@@ -93,4 +93,11 @@ Neste módulo o metawrap utiliza a ferramenta MEGABLAST para fazer a identifica�
 
 ![final_assembly blobplot taxlevel_order](https://github.com/user-attachments/assets/5d2ada48-a722-4793-8d63-eda65f7cd96a)
 
+Utilizando os bins refinados obtidos no módulo BIN_REFINEMENT, os resultados foram:
+
+![final_assembly blobplot binned_yes_no](https://github.com/user-attachments/assets/6d69cf78-7136-4847-934c-b07e042b9547)
+
+![final_assembly blobplot binned_phylum](https://github.com/user-attachments/assets/7b8f424b-36eb-4bf6-9dd4-151d6589e285)
+
+![final_assembly blobplot bin](https://github.com/user-attachments/assets/7c63f483-3395-4701-89fc-51102c9c1550)
 
