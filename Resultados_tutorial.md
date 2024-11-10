@@ -168,3 +168,11 @@ Este módulo usa o taxator-tk para definir a taxonomia de cada contig, gerando u
 | bin.4.orig.fa          | Archaea;Euryarchaeota;Methanobacteria;Methanobacteriales;Methanobacteriaceae;Methanobrevibacter;Methanobrevibacter smithii |
 | bin.1.permissive.fa    | Bacteria;Bacillota                                                                            |
 
+**ANNOTATE_BINS_MODULE**
+
+Após a execução do módulo anterior obtivemos 10 bins confiáveis. Neste módulo, o metawrap utiliza a ferramenta prokka para associar as sequências dos bins refinados com proteínas conhecidas. Isto nos permite estimar a função de várias porções do metagenoma.
+
+Os resultados dos bins estão apresentados abaixo:
+
+git add 
+
