@@ -4,7 +4,7 @@ Resultados do tutorial:
 
 **READ_QC MODULE**
 
-Neste módulo as reads brutas tiveram os adaptadores do método de sequenciamento pelo TrmGalore, e a contaminação humana foi removida com o bmtagger. O report de qualidade das reads (feito pelo FastQC) segue abaixo:
+No módulo READ_QC o metawrap faz a retirada dos adaptadores do método de sequenciamento pelo TrmGalore (nas configurações padrão), e a contaminação humana é removida com o bmtagger (que compara as reads com o genoma humano). O módulo READ_QC foi feito para sequências retiradas do Ilumina. O report de qualidade das reads pré processamento e pós processamento (feitas pelo FastQC) segue abaixo:
 
 
 ERR011347:
@@ -58,13 +58,13 @@ ERR011349:
 
 **ASSEMBLY_MODULE**
 
-O assembly das reads em contigs foi feito com o programa MegaHit. O report do módulo está no link:
+O módulo ASSEMBLY do metawrap pode utilizar o metaSPAdes ou o MegaHit para juntar as reads limpas em contigs. O assembly das reads foi feito com o programa MegaHit. O report do módulo está no link:
 
     file:///C:/Users/Asus/Tutorial%20metaWRAP/Tentativa%20definitiva/ASSEMBLY/assembly_report.html
 
 **INITIAL_BINNING_MODULE + BIN_REFINEMENT_MODULE**
 
-Durante o binning inicial utilizamos as ferramentas concoct, maxbin2 e metabat2. Estes resultados foram refinados pelo módulo BIN_REFINEMENT, que escolhe a melhor combinação dos bins a ser utilizada. Ao final identificamos 10 bins dentro dos padrões (completude > 50% / contaminação < 10%).
+O módulo INITIAL_BINNING inicialmente utiliza o bwa-index (transformada de Burrows-Wheeler) para fazer um index dos contigs gerados no módulo anterior. O bwa-index é usado na etapa de alinhamento. O pós-alinhamento é realizado pelo samtools e o binning usa as ferramentas concoct, maxbin2 e metabat2. Estes resultados foram refinados pelo módulo BIN_REFINEMENT, que escolhe a melhor combinação dos bins a ser utilizada. Ao final identificamos 10 bins dentro dos padrões (completude > 50% / contaminação < 10%).
 
 | bin    | completeness | contamination | GC    | lineage        | N50   | size    | binner |
 |:------:|:------------:|:-------------:|:-----:|:--------------:|:-----:|:-------:|:------:|
@@ -85,7 +85,7 @@ Abaixo temos um gráfico que demonstra comparativamente a qualidade das bins ind
 
 **BLOBOLOGY_MODULE**
 
-Neste módulo o metawrap utiliza a ferramenta MEGABLAST para fazer a identificação taxonômica dos contigs de cada amostra. Em paralelo o módulo também usa o bowtie2, que é um programa de alinhamento gênico, que utiliza as reads limpas obtidas no módulo READ_QC. Com ambos os programas e com a base de dados do NCBI, o Metawrap gerou os seguintes resultados:
+Neste módulo o metawrap utiliza a ferramenta MEGABLAST para fazer a identificação taxonômica dos contigs de cada amostra. Em paralelo o módulo também usa o bowtie2, um programa de alinhamento gênico, que utiliza as reads limpas obtidas no módulo READ_QC. Com ambos os programas e com a base de dados do NCBI, o Metawrap gerou os seguintes resultados:
 
 ![final_assembly blobplot taxlevel_superkingdom](https://github.com/user-attachments/assets/ee6a1841-3e3d-473a-98dd-df155a524763)
 
@@ -105,7 +105,7 @@ Utilizando os bins refinados obtidos no módulo BIN_REFINEMENT, os resultados fo
 
 **QUANT_BINS_MODULE**
 
-Este módulo utiliza a ferramenta Salmon para criar um heatmap indicando a abundância dos bins em cada amostra. Esta é uma análise importante porque indica quais bins estão mais ou menos frequentes.
+Este módulo utiliza a ferramenta Salmon para indexar todos os dados de metagenômica, alinhando-os e criando um heatmap indicando a abundância dos bins em cada amostra. Esta é uma análise importante porque indica quais bins estão mais ou menos frequentes.
 
 ![bin_abundance_heatmap](https://github.com/user-attachments/assets/033ac222-716d-4135-a11a-2845db5cd7f8)
 
@@ -126,9 +126,9 @@ Os dados brutos do heatmap são:
 
 **REASSEMBLED_BINS_MODULE**
 
-Este módulo procura remontar os bins gerados no módulo BIN_REFINEMENT, remontando bins melhores por meio do SPAdes. Inicialmente este módulo separa os bins em grupos distintos de acordo com o número de incompatibilidades presentes nas leituras. A ferramenta SPAdes cria novos bins que são avaliados quanto a completude e contaminação pelo CheckM. 
+Este módulo procura melhorar os bins gerados no módulo BIN_REFINEMENT, remontando bins melhores por meio do SPAdes. Inicialmente este módulo separa as reads em grupos distintos de acordo com o número de incompatibilidades presentes nas leituras. A partir disso, a ferramenta SPAdes cria novos bins que são avaliados quanto a completude e contaminação pelo CheckM. 
 
-Os valores brutos são:
+Os resultados do REASSEMBLED_BINS_MODULE estão na tabela abaixo:
 
 | bin                  | completeness | contamination | GC    | lineage        | N50   | size    |
 |:--------------------:|:------------:|:-------------:|:-----:|:--------------:|:-----:|:-------:|
@@ -153,7 +153,7 @@ O gráfico final feito pelo CheckM segue abaixo:
 
 **CLASSIFY_BINS_MODULE**
 
-Este módulo usa o taxator-tk para definir a taxonomia de cada contig, gerando um resultado confiável para os bins. Os resultados deste módulo foram:
+Este módulo usa os contigs que compõem os bins do BIN_REFINEMENT, alinhando-os com o programa MegaBlast. Após isto, ele utiliza o taxator-tk para definir a taxonomia de cada contig, gerando um resultado confiável para os bins. Os resultados deste módulo foram:
 
 | Filename                | Taxonomy                                                                                       |
 |:----------------------:|:----------------------------------------------------------------------------------------------:|
@@ -170,9 +170,5 @@ Este módulo usa o taxator-tk para definir a taxonomia de cada contig, gerando u
 
 **ANNOTATE_BINS_MODULE**
 
-Após a execução do módulo anterior obtivemos 10 bins confiáveis. Neste módulo, o metawrap utiliza a ferramenta prokka para associar as sequências dos bins refinados com proteínas conhecidas. Isto nos permite estimar a função de várias porções do metagenoma.
-
-Os resultados dos bins estão apresentados abaixo:
-
-git add 
+Após a execução do módulo anterior obtivemos 10 bins confiáveis. Neste módulo, o metawrap utiliza a ferramenta prokka para associar as sequências dos bins refinados com proteínas conhecidas. Isto nos permite estimar a função de várias porções do metagenoma. Os resultados estão presentes nos files do github.
 
