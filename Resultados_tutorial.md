@@ -1,4 +1,7 @@
 # Tutorial-metawrap
+Mapa mental do Metawrap:
+
+![metaWRAP_detailed_flowchart](https://github.com/user-attachments/assets/66e0b976-f956-4cd2-beb9-d9e705790dda)
 
 Resultados do tutorial:
 
