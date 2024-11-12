@@ -35,8 +35,8 @@ Lista de programas utilizados pelo Metawrap:
 
 **CheckM:** Ferramenta que avalia a qualidade dos binning produzidos por amostras de metagenômica. A ferramenta avalia a completude e a contaminação das amostras. https://doi.org/10.1101/gr.186072.114
 
-Salmon;
+**Salmon:** Usado para a quantificação dos bins nas amostras. Ferramenta capaz de fazer um heatmap dos bins, permitindo uma análise quantitativa de cada amostra. https://doi.org/10.1038/nmeth.4197
 
-taxator-tk;
+**taxator-tk:** Ferramenta de classificação taxonômica dos bins gerados pela metagenômica. https://doi.org/10.1093/bioinformatics/btu745
 
-PROKKA;
+**PROKKA:** É usado para a anotação dos contigs, associando-os com proteínas funcionais ou hipotéticas. https://doi.org/10.1093/bioinformatics/btu153
