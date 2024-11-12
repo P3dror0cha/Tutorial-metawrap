@@ -19,15 +19,15 @@ Lista de programas utilizados pelo Metawrap:
 
 **QUAST:** É uma ferramenta de avaliação da qualidade de montagens genômicas que pode funcionar ou não com um genoma de referência. Para avaliar a qualidade o QUAST gera resultados como: N50, L50, número de contigs, porcentagem de erro, GC%. O QUAST permite a visualização destes resultados em reports gráficos. Há também o metaQUAST, que é um programa específico para avaliar a qualidade de dados metagenômicos. O artigo do QUAST: https://doi.org/10.1093/bioinformatics/btt086. O artigo do metaQUAST: http://dx.doi.org/10.1093/bioinformatics/btv697.
 
-bowtie2:
+**bowtie2:** Programa usado para o alinhamento das sequências utilizando um genoma de referência.
 
-samtools;
+**samtools:** É um conjunto de ferramentas amplamente utilizado em bioinformática para manipulação e análise de arquivos de sequenciamento genético no formato SAM (Sequence Alignment/Map) e BAM (Binary Alignment/Map). Com o samtools podemos converter, ordenar, indexar, filtrar, extrair, analisar e concatenar arquivos dos tipos SAM e BAM.
 
-bwa-index;
+**bwa-index:** O bwa é um alinhador de sequência que utiliza a transformada de Burrows-Wheeler para comprimir e indexar as sequências. Ler artigo: https://doi.org/10.1093/bioinformatics/btp324.
 
-bwa-mem;
+**bwa-mem:** É um mapeador de leituras. Utiliza o output do bwa-index para alinhar as sequências em um genoma de referência.
 
-metaBAT2;
+metaBAT2:
 
 maxbin2;
 
