@@ -11,9 +11,9 @@ Lista de programas utilizados pelo Metawrap:
 ![image](https://github.com/user-attachments/assets/0a99a17f-c8b0-4621-b7b5-d74729a6a5f0)
 
 
-KROna tools;
+**KROna tools:** O Krona é uma ferramenta de visualização interativa que gera imagens, gráficos ou mapas taxônomicos. O Kronatools é o conjunto de scrips que é usado para manipular o Krona. 
 
-SPAdes;
+**SPAdes:** Ler o artigo: Bankevich A, et al. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. J Comput Biol. 2012 May;19(5):455-77. doi: 10.1089/cmb.2012.0021. Epub 2012 Apr 16. PMID: 22506599; PMCID: PMC3342519.
 
 MegaHit;
 
