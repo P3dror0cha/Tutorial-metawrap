@@ -27,13 +27,13 @@ Lista de programas utilizados pelo Metawrap:
 
 **bwa-mem:** É um mapeador de leituras. Utiliza o output do bwa-index para alinhar as sequências em um genoma de referência.
 
-metaBAT2:
+**metaBAT2:** É uma ferramenta de binning dos contigs. O binning é feito sem uso de um genoma de referência, levando em consideração aabundância de contigs e o perfil de cobertura. O artigo do metaBAT2 é este: https://doi.org/10.7717/peerj.7359.
 
-maxbin2;
+**maxbin2:** Ferramenta de binning que utiliza um modelo de máxima verossemelhança dos contigs. O artigo é: https://doi.org/10.1093/bioinformatics/btv638.
 
-CONCOCT;
+**CONCOCT:** Ferramenta de binning. https://doi.org/10.1038/nmeth.3103
 
-CheckM;
+**CheckM:** Ferramenta que avalia a qualidade dos binning produzidos por amostras de metagenômica. A ferramenta avalia a completude e a contaminação das amostras. https://doi.org/10.1101/gr.186072.114
 
 Salmon;
 
