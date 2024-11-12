@@ -17,9 +17,9 @@ Lista de programas utilizados pelo Metawrap:
 
 **MegaHit:** Funciona de forma semelhante ao spades. Ler o artigo do Megahit: https://doi.org/10.1016/j.ymeth.2016.02.020
 
-QUAST;
+**QUAST:** É uma ferramenta de avaliação da qualidade de montagens genômicas que pode funcionar ou não com um genoma de referência. Para avaliar a qualidade o QUAST gera resultados como: N50, L50, número de contigs, porcentagem de erro, GC%. O QUAST permite a visualização destes resultados em reports gráficos. Há também o metaQUAST, que é um programa específico para avaliar a qualidade de dados metagenômicos. O artigo do QUAST: https://doi.org/10.1093/bioinformatics/btt086. O artigo do metaQUAST: http://dx.doi.org/10.1093/bioinformatics/btv697.
 
-bowtie2;
+bowtie2:
 
 samtools;
 
