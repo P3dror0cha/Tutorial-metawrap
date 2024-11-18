@@ -59,3 +59,5 @@ find ~/BIN_REASSEMBLY -type f \( -name "*.stats*" -o -name "*.png*" \) -exec mv 
 # Módulo CLASSIFY BINS
 metawrap classify_bins -b BIN_REASSEMBLY/reassembled_bins -o BIN_CLASSIFICATION -t 24
 find ~/BIN_CLASSIFICATION -type f \( -name "*.stats*" -o -name "*.tab*" \) -exec mv {} ~/resultados_tutorial/resultados_bin_classification \;
+
+
