@@ -47,11 +47,11 @@ find ~/ASSEMBLY -type d \( -name "*assembly_report*" -o -name "*final_assembly*"
 # Módulo de BINNING - a partir daqui segue o pós_assembly
 metawrap binning -o INITIAL_BINNING -t 24 -a ASSEMBLY/final_assembly.fasta --metabat2 --maxbin2 --concoct CLEAN_READS/ERR*fastq
 
-# Módulo de Refinamento dos bins
+# Módulo de Refinamento dos bins - certo
 metawrap bin_refinement -o BIN_REFINEMENT -t 24 -A INITIAL_BINNING/metabat2_bins/ -B INITIAL_BINNING/maxbin2_bins/ -C INITIAL_BINNING/concoct_bins/ -c 50 -x 10
 find ~/BIN_REFINEMENT -type d \( -name "*.stats*" -o -name "*.png*" \) -exec mv {} ~/resultados_tutorial/resultados_bin_refinement \;
 
-# Módulo BLOBOLOGY
+# Módulo BLOBOLOGY - errado
 metawrap blobology -a ASSEMBLY/final_assembly.fasta -t 24 -o BLOBOLOGY --bins BIN_REFINEMENT/metawrap_50_10_bins CLEAN_READS/ERR*fastq
 find ~/BLOBOLOGY -type d \( -name "*.png*" \) -exec mv {} ~/resultados_tutorial/resultados_blobology \;
 
