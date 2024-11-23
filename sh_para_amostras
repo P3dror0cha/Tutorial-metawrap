@@ -8,7 +8,7 @@ PATH=/temporario2/12689050/metaWRAP/bin:$PATH
 fastqc -o /temporario2/12689050/amostra_teste_metawrap/FASTQC_REPORT /temporario2/12689050/amostra_teste_metawrap/With_nitrate.fastq
 trim_galore -o /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS /temporario2/12689050/amostra_teste_metawrap/With_nitrate.fastq
 fastqc -o /temporario2/12689050/amostra_teste_metawrap/FASTQC_REPORT /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS/With_nitrate_trimmed.fq
-bmtagger.sh -b /temporario2/12689050/BMTAGGER_INDEX/hg38.bitmask -x /temporario2/12689050/BMTAGGER_INDEX/hg38.srprism -q1\ -1 /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS/With_nitrate_trimmed.fq
+bmtagger.sh -b /temporario2/12689050/BMTAGGER_INDEX/hg38.bitmask -x /temporario2/12689050/BMTAGGER_INDEX/hg38.srprism -q1 -1 /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS/With_nitrate_trimmed.fq
 
 metawrap read_qc -i /temporario2/12689050/amostra_teste_metawrap/With_nitrate.fastq -t 24 -o READS/with_nitrate
 
