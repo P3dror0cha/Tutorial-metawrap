@@ -5,7 +5,6 @@ micromamba activate metawrap-env
 PATH=/temporario2/12689050/metaWRAP/bin:$PATH
 
 # Módulo READ_QC
-mkdir READS
 fastqc -o /temporario2/12689050/amostra_teste_metawrap/FASTQC_REPORT/pre_fc_with_nitrate /temporario2/12689050/amostra_teste_metawrap/With_nitrate.fastq
 trim-galore --cores 4 -o /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS /temporario2/12689050/amostra_teste_metawrap/With_nitrate.fastq
 fastqc -o /temporario2/12689050/amostra_teste_metawrap/FASTQC_REPORT/pos_fc_with_nitrate /temporario2/12689050/amostra_teste_metawrap/TRIMMED_READS/With_nitrate_trimmed.fq
