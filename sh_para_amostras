@@ -4,25 +4,10 @@ eval "$(./bin/micromamba shell hook -s posix)"
 micromamba activate metawrap-env
 PATH=/temporario2/12689050/metaWRAP/bin:$PATH
 
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011347/ERR011347_1.fastq.gz
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011347/ERR011347_2.fastq.gz
-
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011348/ERR011348_1.fastq.gz
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011348/ERR011348_2.fastq.gz
-
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011349/ERR011349_1.fastq.gz
-wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR011/ERR011349/ERR011349_2.fastq.gz
-
-gunzip *.gz
-
-mkdir RAW_READS
-mv *fastq RAW_READS
-
 # Módulo READ_QC
-mkdir READ_QC
-metawrap read_qc -1 RAW_READS/ERR011347_1.fastq -2 RAW_READS/ERR011347_2.fastq -t 24 -o READ_QC/ERR011347
-metawrap read_qc -1 RAW_READS/ERR011348_1.fastq -2 RAW_READS/ERR011348_2.fastq -t 24 -o READ_QC/ERR011348
-metawrap read_qc -1 RAW_READS/ERR011349_1.fastq -2 RAW_READS/ERR011349_2.fastq -t 24 -o READ_QC/ERR011349
+mkdir MO1_READ
+metawrap read_qc -i /temporario2/12689050/amostra_teste_metawrap -t 24 -o MO1_READ/with_nitrate
+
 
 find ~/READ_QC/ERR011347 -type d \( -name "*post-report*" -o -name "*pre-report*" \) -exec mv {} ~/resultados_tutorial/resultados_read_qc/ERR011347 \;
 find ~/READ_QC/ERR011348 -type d \( -name "*post-report*" -o -name "*pre-report*" \) -exec mv {} ~/resultados_tutorial/resultados_read_qc/ERR011348 \;
