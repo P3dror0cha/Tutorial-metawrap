@@ -108,6 +108,8 @@ Utilizando os bins refinados obtidos no módulo BIN_REFINEMENT, os resultados fo
 
 **QUANT_BINS_MODULE**
 
+![bin_abundance_heatmap](https://github.com/user-attachments/assets/f224dcca-6f66-4dc5-b7fb-a572ef7fac1e)
+
 Este módulo utiliza a ferramenta Salmon para indexar todos os dados de metagenômica, alinhando-os e criando um heatmap indicando a abundância dos bins em cada amostra. Esta é uma análise importante porque indica quais bins estão mais ou menos frequentes.
 
 ![bin_abundance_heatmap](https://github.com/user-attachments/assets/033ac222-716d-4135-a11a-2845db5cd7f8)
