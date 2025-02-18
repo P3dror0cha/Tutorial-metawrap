@@ -44,7 +44,7 @@ No **Sequence Duplication Levels** vemos qual a porcentagem da nossa amostra que
 
 ![image](https://github.com/user-attachments/assets/49ce21c7-c789-4a3c-ad51-1631a26e57d1)
 
-
+Por fim, no **Overrepresented Sequences** e no **Adapter Content** obtemos mais informações sobre sequencias repetidas presentes na amostra.
 Existem outros avaliadores da qualidade de reads, como o DRISEE, que avaliam a qualidade do sequenciamento pela análise de reads duplicadas. Esta abordagem é interessante quando procuramos identificar erros no método de sequênciamento como um todo.
 
 **Trmgalore:** É um wrapper script usado para fazer o trimming de reads, ou seja, para retirar os adaptadores do método de sequenciamento utilizado. Este programa também é utilizado para limpar amostras de Reduced-representation bisulfite sequencing (RRBS-Seq ).
