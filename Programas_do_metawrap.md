@@ -18,7 +18,7 @@ No **Per Base Sequence Quality** temos a representação da qualidade na forma d
 
 ![image](https://github.com/user-attachments/assets/c41896c9-3077-43ea-b7b8-a586a972b950)
 
-No **Per Sequence Quality** temos a representação da qualidade média das sequencias avaliadas. A variável determinante é o Phred Score que é uma medida de erro. Quanto MAIOR o Phred Score, MENORES são as taxas de erro. Abaixo temos o exemplo de um grupo de sequencias bons e ruins, respectivamente:
+No **Per Sequence Quality** temos a representação da qualidade média das sequencias avaliadas. A variável determinante é o Phred Score que é uma medida de erro. Quanto MAIOR o Phred Score, MENORES são as taxas de erro. A presença de unidades de base com picos ALTOS de % é um indicativo de que a base tem VIÉS. Abaixo temos o exemplo de um grupo de sequencias bons e ruins, respectivamente:
 
 ![persequence_good](https://github.com/user-attachments/assets/31a413d9-d4d1-4ef5-b9a9-7c3f91b3aea6)
 
@@ -30,6 +30,9 @@ No **Per Base Sequence Content** nós observamos a porcentagem de cada nucleotí
 
 ![image](https://github.com/user-attachments/assets/d0dc8df5-424e-496b-a49a-3f33fc0ef760)
 
+No **Per Sequence GC Content** há este tipo de informação:
+
+![image](https://github.com/user-attachments/assets/c63b7211-0109-46c8-9383-92bf3a14d2d4)
 
 Existem outros avaliadores da qualidade de reads, como o DRISEE, que avaliam a qualidade do sequenciamento pela análise de reads duplicadas. Esta abordagem é interessante quando procuramos identificar erros no método de sequênciamento como um todo.
 
