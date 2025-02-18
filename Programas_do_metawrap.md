@@ -12,6 +12,11 @@ O Basic Statistics retorna algumas infos básicas sobre as suas reads. É intere
 
 ![image](https://github.com/user-attachments/assets/ce7f1303-238f-45ca-9c81-bcb1717112d3)
 
+No 'per base sequence quality' temos a representação da qualidade na forma de um boxplot mostrando o erro de todas as bases. 
+
+![g2boxplot](https://github.com/user-attachments/assets/fbac8a59-f828-4b15-9243-fcd1e247d80e)
+
+![image](https://github.com/user-attachments/assets/c41896c9-3077-43ea-b7b8-a586a972b950)
 
 
 
