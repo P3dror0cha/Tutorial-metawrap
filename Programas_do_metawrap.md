@@ -12,12 +12,23 @@ O Basic Statistics retorna algumas infos básicas sobre as suas reads. É intere
 
 ![image](https://github.com/user-attachments/assets/ce7f1303-238f-45ca-9c81-bcb1717112d3)
 
-No 'per base sequence quality' temos a representação da qualidade na forma de um boxplot mostrando o erro de todas as bases. 
+No **Per Base Sequence Quality** temos a representação da qualidade na forma de um boxplot mostrando o erro de todas as bases. 
 
 ![g2boxplot](https://github.com/user-attachments/assets/fbac8a59-f828-4b15-9243-fcd1e247d80e)
 
 ![image](https://github.com/user-attachments/assets/c41896c9-3077-43ea-b7b8-a586a972b950)
 
+No **Per Sequence Quality** temos a representação da qualidade média das sequencias avaliadas. A variável determinante é o Phred Score que é uma medida de erro. Quanto MAIOR o Phred Score, MENORES são as taxas de erro. Abaixo temos o exemplo de um grupo de sequencias bons e ruins, respectivamente:
+
+![persequence_good](https://github.com/user-attachments/assets/31a413d9-d4d1-4ef5-b9a9-7c3f91b3aea6)
+
+![image](https://github.com/user-attachments/assets/a65f8ff5-6509-4a19-b7be-9ced5a543574)
+
+No **Per Base Sequence Content** nós observamos a porcentagem de cada nucleotídeo para cada base das reads. Idealmente uma boa imagem seria aquela que apresenta uma linha reta para todos os quatro nucleotídeos, uma vez que a concentração delas deve se manter constante ao longo da read. Exemplos de como essa info é apresentada segue abaixo:
+
+![image](https://github.com/user-attachments/assets/bbafefc6-dd87-4b60-ba29-ab6922816465)
+
+![image](https://github.com/user-attachments/assets/d0dc8df5-424e-496b-a49a-3f33fc0ef760)
 
 
 Existem outros avaliadores da qualidade de reads, como o DRISEE, que avaliam a qualidade do sequenciamento pela análise de reads duplicadas. Esta abordagem é interessante quando procuramos identificar erros no método de sequênciamento como um todo.
@@ -29,7 +40,6 @@ Existem outros avaliadores da qualidade de reads, como o DRISEE, que avaliam a q
 **KRAKEN2:** É um classificador taxonômico que funciona pela análise dos k-mers gerados pelas leituras. Os k-mers são sequências com tamanho fixo geradas a partir de uma sequência inicial. Por isso, dependendo do tamanho da sequência mãe e dos k-mers, uma amostra pode ter vários k-mers diferentes. O kraken2 utiliza a sua base de dados para relacionar os k-mers das amostras com alguma classificação taxonônica.
 
 ![image](https://github.com/user-attachments/assets/0a99a17f-c8b0-4621-b7b5-d74729a6a5f0)
-
 
 **KROna tools:** O Krona é uma ferramenta de visualização interativa que gera imagens, gráficos ou mapas taxônomicos. O Kronatools é o conjunto de scrips que é usado para manipular o Krona. 
 
