@@ -5,6 +5,8 @@ Lista de programas utilizados pelo Metawrap:
 O **FastQC** devolve vários tipos de informações que podem ser vistas no menu:
 ![image](https://github.com/user-attachments/assets/563d7177-c240-4f98-80ec-7d928a1416e8)
 
+
+
 O Basic Statistics retorna algumas infos básicas sobre as suas reads. É interessante observar o Total das Sequencias, %GC, Tamanho Médio e Sequencias de baixa qualidade. Visualmente, isto está apresentado assim:
 ![image](https://github.com/user-attachments/assets/dbbb19cb-0995-4f58-b03f-441e55e592e1)
 
