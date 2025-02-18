@@ -2,6 +2,17 @@ Lista de programas utilizados pelo Metawrap:
 
 **FastQC:** É uma ferramenta que avalia a qualidade de reads. O FastQC funciona pela análise da qualidade individual de cada base da sequência, atribuindo um valor de qualidade Phred para os nucleotídeos. Este programa suporta vários tipos de formatos como fastq, bam, sam, dentre outros. O fastQC é interessante porque faz as seguintes análises: qualidade de cada base em todas as sequências, qualidade das sequências, conteúdo dos nucleotídeos nas sequências, conteúdo de GC, distribuição de GC, distribuição pelo tamanho das reads, quantidade de sequências duplicadas, avaliação de sequências contaminantes ou Kmers (dentre as sequências super-expressas). 
 
+O **FastQC** devolve vários tipos de informações que podem ser vistas no menu:
+![image](https://github.com/user-attachments/assets/563d7177-c240-4f98-80ec-7d928a1416e8)
+
+O Basic Statistics retorna algumas infos básicas sobre as suas reads. É interessante observar o Total das Sequencias, %GC, Tamanho Médio e Sequencias de baixa qualidade. Visualmente, isto está apresentado assim:
+![image](https://github.com/user-attachments/assets/dbbb19cb-0995-4f58-b03f-441e55e592e1)
+
+![image](https://github.com/user-attachments/assets/ce7f1303-238f-45ca-9c81-bcb1717112d3)
+
+
+
+
 Existem outros avaliadores da qualidade de reads, como o DRISEE, que avaliam a qualidade do sequenciamento pela análise de reads duplicadas. Esta abordagem é interessante quando procuramos identificar erros no método de sequênciamento como um todo.
 
 **Trmgalore:** É um wrapper script usado para fazer o trimming de reads, ou seja, para retirar os adaptadores do método de sequenciamento utilizado. Este programa também é utilizado para limpar amostras de Reduced-representation bisulfite sequencing (RRBS-Seq ).
